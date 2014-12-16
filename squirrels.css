@@ -1,0 +1,69 @@
+canvas {
+	background-image: url("https://s3-us-west-1.amazonaws.com/krazysquirrelz/green_lawn.svg");
+	background-position: 50% 50%;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.game-stats {
+  font-size: 20px;
+  height: 85px;
+  width: 150px;
+  position: absolute;
+  text-align: center;
+  padding: 10px;
+  top: 10px;
+  left: 10px;
+	color: white;
+  font-weight: bold;
+	font-family: 'Indie Flower', cursive;
+	border: 5px solid white;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#game-over-modal {
+	font-family: 'Indie Flower', cursive;
+}
+
+#game-over-modal .modal-content {
+	background-image: url("https://s3-us-west-1.amazonaws.com/krazysquirrelz/evil_background.gif");
+	background-position: 50% 50%;
+	background-size: cover;
+	overflow: hidden;
+	width: 600px;
+	height: 440px;
+	color: white;
+}
+
+.scientist-img {
+	background-image: url('https://s3-us-west-1.amazonaws.com/krazysquirrelz/scientist.gif');
+	/*float: right;*/
+	background-size: 120px 111px;
+	width: 120px;
+	height: 111px;
+/*	opacity: 1;*/
+/*	margin-right: -15px;*/
+	position: relative;
+	top: 224px;
+	left: 180px; 
+}
+
+.game-over-blurb {
+	background-color: white;
+	opacity: 0.6;
+	color: black;
+	padding-top: 10px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	height: 335px;
+	overflow: hidden;
+}

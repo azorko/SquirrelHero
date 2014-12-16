@@ -8,7 +8,7 @@ html, body, canvas {
 
 </style>
 <head>
-	<title>Asteroidz</title>
+	<title>Squirrel Hero</title>
 	<script src="lib/movingObject.js">  </script>
 	<script src="lib/util.js"></script>
 	<script src="lib/asteroid.js"></script>  
@@ -18,36 +18,40 @@ html, body, canvas {
 	<script src="lib/keymaster.js"></script>
 	<script src="lib/bullet.js"></script>
 	<script src="lib/jquery-2.1.1.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="typed.js"></script>
+	<link rel="stylesheet" type="text/css" href="squirrels.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 </head>
   
 <body>
 	
-	<div class="game-stats">
-		
-	</div>
+	<div class="game-stats"></div>
+	
 	<canvas id="game-canvas"></canvas>
-  
-	<style>
-		canvas {
-/*		  background-color: black;*/
-			background-image: url("stars.jpg");
-		}
-		
-		.game-stats {
-		  font-size: 20px;
-		  height: 50px;
-		  width: 150px;
-/*		  border: 3px solid blue;*/
-		  position: absolute;
-		  text-align: center;
-		  padding: 10px;
-		  top: 10px;
-		  left: 10px;
-		  font-family: arial;
-			color: blue;
-		  font-weight: bold;
-		}
-	</style>
+	
+	<div class="modal fade" id="game-over-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close btn" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h2 class="modal-title">Game Over</h2>
+				</div>
+				<div class="modal-body">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1 game-over-blurb">
+						<!-- <p>Squirrel Hero, you couldn't save the cows from the mad scientist...</p>
+						<p><b>Dr. Zonko:</b> Mua-ha-HA-HA, the cows are under my control now! My mad cow army grows every day. Squirrel Hero, you can't stop me from taking over the world, he-he-HE! Come my cow minions...</p>
+						<p>Hope is not yet lost! Play again to save the world.</p> -->
+					</div>
+					<div class="scientist-img"></div>	
+				</div>				
+				
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 	
 	<script>
 	var $el = $("body");
@@ -59,6 +63,7 @@ html, body, canvas {
 	var gView = new Asteroids.GameView(g, ctx, $el);
 	gView.start();
 	</script>
+	
 </body>
 
 
