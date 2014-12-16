@@ -67,3 +67,26 @@ body {
 	height: 335px;
 	overflow: hidden;
 }
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.status-alert {
+	font-size: 45px;
+	color: white;
+	font-family: 'Indie Flower', cursive;
+  position: absolute;
+  text-align: center;
+  top: 15vh;
+  left: 44vw;
+	background-color: transparent;
+}

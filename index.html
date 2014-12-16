@@ -9,6 +9,7 @@ html, body, canvas {
 </style>
 <head>
 	<title>Squirrel Hero</title>
+	<link rel="shortcut icon" href="https://s3-us-west-1.amazonaws.com/krazysquirrelz/cow.ico" >
 	<script src="lib/movingObject.js">  </script>
 	<script src="lib/util.js"></script>
 	<script src="lib/asteroid.js"></script>  
@@ -20,7 +21,7 @@ html, body, canvas {
 	<script src="lib/jquery-2.1.1.js"></script>
 	<script src="bootstrap.min.js"></script>
 	<script src="typed.js"></script>
-	<link rel="stylesheet" type="text/css" href="squirrels.css">
+	<link rel="stylesheet" type="text/css" href="squirrel_hero.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 </head>
@@ -28,6 +29,8 @@ html, body, canvas {
 <body>
 	
 	<div class="game-stats"></div>
+	
+	<div class="status-alert hidden">Lost a Life</div>
 	
 	<canvas id="game-canvas"></canvas>
 	
@@ -41,9 +44,6 @@ html, body, canvas {
 				<div class="modal-body">
 				<div class="row">
 					<div class="col-md-5 col-md-offset-1 game-over-blurb">
-						<!-- <p>Squirrel Hero, you couldn't save the cows from the mad scientist...</p>
-						<p><b>Dr. Zonko:</b> Mua-ha-HA-HA, the cows are under my control now! My mad cow army grows every day. Squirrel Hero, you can't stop me from taking over the world, he-he-HE! Come my cow minions...</p>
-						<p>Hope is not yet lost! Play again to save the world.</p> -->
 					</div>
 					<div class="scientist-img"></div>	
 				</div>				
