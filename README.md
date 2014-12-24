@@ -16,3 +16,5 @@ Features:
 * Javascript/jQuery on HTML5 Canvas desktop game
 
 * Prototypal inheritance
+
+* Utilizes trigonometry to create accurate object collisions
