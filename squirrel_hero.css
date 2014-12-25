@@ -97,11 +97,11 @@ body {
   position: absolute;
   text-align: center;
   top: 15vh;
-  left: 44vw;
+  left: 35vw;
 	background-color: transparent;
 }
 
-#restart-button {
+.restart-button {
 	position: relative;
 	top: 280px;
 	left: 35px;
@@ -124,6 +124,6 @@ body {
 	opacity: 0.8;
 }
 
-#restart-button:hover {
+.restart-button:hover {
 	opacity: 0.8;
 }
