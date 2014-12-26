@@ -13,9 +13,9 @@
 	border: 5px solid white;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
-}
+/*::-webkit-scrollbar {
+    display: none;
+}*/
 
 body {
 	width: 100%;
@@ -43,15 +43,15 @@ body {
   max-height: 530px;
 }
 
-.scientist-img {
+/*.scientist-img {
 	background-image: url('https://s3-us-west-1.amazonaws.com/krazysquirrelz/scientist.gif');
 	background-size: 120px 111px;
 	width: 120px;
 	height: 111px;
 	position: relative;
 	top: 224px;
-	left: 180px; 
-}
+	left: 180px;
+}*/
 
 .game-over-blurb, .game-won-blurb {
 	position: relative;
@@ -106,9 +106,9 @@ body {
 	top: 280px;
 	left: 35px;
 	width: 230px;
-	background-color: white;
-	color: black;
-	border: none;
+	background-color: white !important;
+	color: black !important;
+	border: none !important;
 	opacity: 0.9;
 }
 

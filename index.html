@@ -12,13 +12,13 @@ html, body, canvas {
 	<link rel="shortcut icon" href="https://s3-us-west-1.amazonaws.com/krazysquirrelz/cow.ico" >
 	<script src="lib/movingObject.js">  </script>
 	<script src="lib/util.js"></script>
-	<script src="lib/asteroid.js"></script>
+	<script src="lib/flying_cow.js"></script>
 	<script src="lib/cow.js"></script> 
 	<script src="lib/game.js"></script>  
 	<script src="lib/gameView.js"></script>
-	<script src="lib/ship.js"></script>
+	<script src="lib/squirrel.js"></script>
 	<script src="lib/keymaster.js"></script>
-	<script src="lib/bullet.js"></script>
+	<script src="lib/acorn.js"></script>
 	<script src="lib/jquery-2.1.1.js"></script>
 	<script src="bootstrap.min.js"></script>
 	<script src="typed.js"></script>
@@ -49,7 +49,6 @@ html, body, canvas {
 						<p>Only Squirrel Hero can save Elwynn Forest now! Hero has discovered a weakness in Zonko's plan. Contrary to the high tech nature of the ZONKO-BALLOONAWAYs, these gadgets are made of 99% latex and are easily penetrable! Armed with his trusty acorn shooters he can pop the ZONKO-BALLOONAWAYs and set the cows free. Help Squirrel Hero save the world one cow at a time!</p>
 						<p>Move Hero with the arrow keys and shoot acorns by pressing the spacebar.</p>
 					</div>
-					<!-- <div class="scientist-img"></div> -->
 				</div>
 				<div class="row">
 					<div class="col-md-4 col-md-offset-3">
@@ -112,8 +111,8 @@ html, body, canvas {
 	canvas.height = window.innerHeight;
 	canvas.width = window.innerWidth;
 	var ctx = canvas.getContext("2d");
-	var g = new Asteroids.Game(ctx);
-	var gView = new Asteroids.GameView(g, ctx, $el);
+	var g = new SquirrelHero.Game(ctx);
+	var gView = new SquirrelHero.GameView(g, ctx, $el);
 	gView.start();
 	
 	
