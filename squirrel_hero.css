@@ -90,7 +90,7 @@ body {
   transition: visibility 0s 2s, opacity 2s linear;
 }
 
-.status-alert {
+.status-alert, .instructions {
 	font-size: 45px;
 	color: white;
 	font-family: 'Indie Flower', cursive;
@@ -98,6 +98,13 @@ body {
   text-align: center;
   top: 15vh;
   left: 35vw;
+	background-color: transparent;
+}
+
+.instructions {
+	position: absolute;
+  top: 15vh;
+  left: 27vw;
 	background-color: transparent;
 }
 
