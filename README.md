@@ -8,7 +8,7 @@ Help Squirrel Hero save the world one cow at a time!
 
 Controls:
  
-* UP/LEFT/DOWN/RIGHT or W/A/S/D to navigate 
+* UP/LEFT/DOWN/RIGHT to navigate 
 * SPACEBAR fires acorns
 
 Features:

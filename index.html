@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html>
-<style>
-html, body, canvas {
-	padding: 0px;
-	margin: 0px;
-}
 
-</style>
 <head>
 	<title>Squirrel Hero</title>
 	<link rel="shortcut icon" href="https://s3-us-west-1.amazonaws.com/krazysquirrelz/cow.ico" >
-	<script src="lib/movingObject.js">  </script>
+	<script src="lib/movingObject.js"></script>
 	<script src="lib/util.js"></script>
 	<script src="lib/flying_cow.js"></script>
 	<script src="lib/bomb.js"></script>
@@ -108,16 +102,14 @@ html, body, canvas {
 	</div><!-- /.modal -->
 	
 	<script>
-	var $el = $("body");
-	var canvas = document.getElementById("game-canvas");
-	canvas.height = window.innerHeight;
-	canvas.width = window.innerWidth;
-	var ctx = canvas.getContext("2d");
-	var g = new SquirrelHero.Game(ctx);
-	var gView = new SquirrelHero.GameView(g, ctx, $el);
-	gView.start();
-	
-	
+		var $el = $("body");
+		var canvas = document.getElementById("game-canvas");
+		canvas.height = window.innerHeight;
+		canvas.width = window.innerWidth;
+		var ctx = canvas.getContext("2d");
+		var g = new SquirrelHero.Game(ctx);
+		var gView = new SquirrelHero.GameView(g, ctx, $el);
+		gView.start();
 	</script>
 	
 </body>

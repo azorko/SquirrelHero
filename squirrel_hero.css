@@ -1,3 +1,8 @@
+html, body, canvas {
+	padding: 0px;
+	margin: 0px;
+}
+
 .game-stats {
   font-size: 20px;
   height: 140px;
@@ -12,10 +17,6 @@
 	font-family: 'Indie Flower', cursive;
 	border: 5px solid white;
 }
-
-/*::-webkit-scrollbar {
-    display: none;
-}*/
 
 body {
 	width: 100%;
@@ -42,16 +43,6 @@ body {
 #game-start-modal .modal-body {
   max-height: 530px;
 }
-
-/*.scientist-img {
-	background-image: url('https://s3-us-west-1.amazonaws.com/krazysquirrelz/scientist.gif');
-	background-size: 120px 111px;
-	width: 120px;
-	height: 111px;
-	position: relative;
-	top: 224px;
-	left: 180px;
-}*/
 
 .game-over-blurb, .game-won-blurb {
 	position: relative;
